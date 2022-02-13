@@ -4,13 +4,13 @@ Generates custom scripts and night order sheets for 8.5x11" paper with two scrip
 
 #### Usage
 
-To create a script, hdownload all the files and your script's json to one directory,  then run generate_script.py with your scriptname (without ".json") as the first argument (you can also just change the default scriptname variable inside the file). It will generate a .tex file that can be compiled with script.cls to create the script.
+To create a script, download all the files and your script's json to one directory,  then run generate_script.py with your scriptname (without ".json") as the first argument (you can also just change the default scriptname variable inside the file). It will generate a .tex file that can be compiled with script.cls to create the script.
 
 You can compile the Latex easily in [Overleaf](overleaf.com) by creating a new project from the included zip file (it's just Icons, Lora, and script.cls), then going to menu in the top left, changing the compiler from pdfLatex to LuaLatex, and pressing recompile with your generated script!
 
 You need to use LuaLatex to compile as I use the \fontspec command to load the Lora font. You can set this in Overleaf by clicking "menu" at the top left.
 
-You might need to find and edit the **4.35in** number (increase or decrease it) to make the night order side look good; I wasn't able to make it fancy Latex, maybe later. It's just a rule that has that height and controls the position of the other nights side, but I use a rotatebox that refuses to compile with the origin set to top, so it's hard to predict.
+You might need to find and edit the **4.35in** number (increase or decrease it) to make the night order side look good; I wasn't able to make it fancy, maybe later. It's just a rule that has that height and controls the position of the other nights side, but I use a rotatebox that refuses to compile with the origin set to top, so it's hard to predict.
 
 #### Notes
 

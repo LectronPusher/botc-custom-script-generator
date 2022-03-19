@@ -12,7 +12,9 @@ You need to use LuaLatex to compile as I use the \fontspec command to load the L
 
 #### Notes
 
-Some characters have images that don't load when trimmed to fit, looks like it's expansion characters added to Bra1n's townsquare after May 2021, when the Bra1n images were cleaned and standardized. This is a problem that I haven't been able to solve in Latex, and might end up solving later. Unfortunately this means that custom images also won't work well as they aren't shifted the way most of the Bra1n images are.
+Some characters have new images that don't match the old ones perfectly.It appears to be only expansion characters added to Bra1n's townsquare after May 2021, when the Bra1n images were cleaned and standardized. I've edited the relevant images, and they now show up in Latex, but are a bit undersized, and are still missing the white border and shadow of the others. I'll resize them in a bit (how I'm doing it requires some manual steps that take time), but I'm pushing this update now because I can.
+
+Also, custom images also won't work well as they aren't shifted the way the Bra1n images are. I think it's suposed to be 539x539 images with 100 pixels of nothing at the bottom, and the image centered in the above space.
 
 This should work ok with custom scripts so long as they don't share an id with anything in roles.json, except for the problem with image trimmming.
 

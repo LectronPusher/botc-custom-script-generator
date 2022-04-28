@@ -30,6 +30,7 @@ for char in script: # preserve character order from the json
 		scriptname = char['name']
 		continue # don't add _meta to the script
 	char['id'] = char['id'].replace('_','')
+	char['id'] = char['id'].replace('-','') # just the pit-hag... why
 	for role in roles:
 		if role['id'] == char['id']:
 			char = role
